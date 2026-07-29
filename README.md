@@ -68,6 +68,16 @@ Nota: Un departamento pertenece a un edificio
 - Agregar servicios web que permitan lista; crear; actualizar y eliminar entidades (todas deben tener acceso con token)
 - Crear una aplicación en Flask que permita:
 	-	Listar Edificios haciendo uso de los servicios web creados en el proyecto de Django
+ -	<img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/7600495c-3d2d-424c-9129-cc0943432c53" />
 	- Listar Departamentos haciendo uso de los servicios web creados en el proyecto de Django.
+ - <img width="1917" height="1015" alt="image" src="https://github.com/user-attachments/assets/a070d53e-9e04-4f6b-81e3-3a39641553e6" />
 	- Crear Edificios haciendo uso de los servicios web creados en el proyecto de Django.
+ - <img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/b4214d93-9ff9-48b7-b880-b4a6137c7398" />
 	- Crear Departamentos haciendo uso de los servicios web creados en el proyecto de Django.
+ - <img width="1917" height="1016" alt="image" src="https://github.com/user-attachments/assets/88a3c8ab-c881-47d9-8790-35daa720a606" />
+
+### BASE DE DATOS
+
+- <img width="1352" height="446" alt="image" src="https://github.com/user-attachments/assets/8e311c50-c6bb-49f2-8b32-2c98445f4b5c" />
+
+- <img width="1377" height="410" alt="image" src="https://github.com/user-attachments/assets/3056372b-43bc-4563-81bf-59268f532bae" />
