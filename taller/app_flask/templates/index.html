@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flask - Gestión</title>
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header-principal {
+    background-color: #003f63; /* Azul profundo universidad */
+    color: #ffbf00; /* Amarillo universidad */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ffbf00;
+}
+
+.header-principal h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navegacion {
+    background-color: #004b75;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navegacion a:hover {
+    background-color: #ffbf00;
+    color: #003f63;
+}
+
+.contenido-principal {
+    margin: 20px 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabla-datos th, .tabla-datos td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-datos th {
+    background-color: #004b75;
+    color: #ffbf00;
+}
+
+.tabla-datos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.formulario-basico {
+    max-width: 500px;
+}
+
+.formulario-basico label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003f63;
+}
+
+.formulario-basico input, .formulario-basico select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton-enviar {
+    margin-top: 20px;
+    background-color: #ffbf00;
+    color: #003f63;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.boton-enviar:hover {
+    background-color: #e6ac00;
+}
+</style>
+</head>
+<body>
+  <div class="header-principal">
+    <h1>Portal Cliente (Flask)</h1>
+    <small>Gestión de Inmuebles</small>
+  </div>
+  
+  <div class="navegacion">
+    <a href="/">Inicio</a>
+    <a href="/edificios">Ver Edificios</a>
+    <a href="/departamentos">Ver Departamentos</a>
+    <a href="/crear/edificio">+ Agregar Edificio</a>
+    <a href="/crear/departamento">+ Agregar Depto</a>
+  </div>
+
+  <div class="contenido-principal">
+    {% block content %}
+    <h2>Bienvenido al sistema</h2>
+    <p>Utilice la barra de navegación para interactuar con la información.</p>
+    {% endblock %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block content %}
+<h2>Listado de Edificios Registrados</h2>
+<p>Total de edificios: <strong>{{ numero }}</strong></p>
+
+<table class="tabla-datos">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Dirección</th>
+      <th>Ciudad</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for e in edificios %}
+    <tr>
+      <td>{{ e.nombre }}</td>
+      <td>{{ e.direccion }}</td>
+      <td>{{ e.ciudad }}</td>
+      <td>{{ e.tipo }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

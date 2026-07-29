@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<h2>Listado de Departamentos (API)</h2>
+
+<table class="tabla-datos">
+  <thead>
+    <tr>
+      <th>Propietario</th>
+      <th>Costo</th>
+      <th>Cuartos</th>
+      <th>Edificio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for d in departamentos %}
+    <tr>
+      <td>{{ d.nombre_propietario }}</td>
+      <td>${{ d.costo }}</td>
+      <td>{{ d.numero_cuartos }}</td>
+      <td>{{ d.edificio.nombre }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

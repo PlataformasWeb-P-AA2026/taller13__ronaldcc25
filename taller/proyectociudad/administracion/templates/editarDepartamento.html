@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Editar Departamento
+{% endblock %}
+
+{% block content %}
+
+  <section class="content-section">
+    <section class="form-section">
+      <h2>Editar Departamento</h2>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        {{formulario.as_p}}
+        <p><input type='submit' value='Actualizar'/></p>
+      </form>
+    </section>
+  </section>
+
+{% endblock %}
